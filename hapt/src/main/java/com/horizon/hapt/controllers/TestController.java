@@ -1,5 +1,5 @@
 
-package com.horizon.hapt;
+package com.horizon.hapt.controllers;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
