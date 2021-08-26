@@ -1,48 +1,28 @@
 package com.horizon.hapt.models;
 
 public class Formateur {
-    private String nom;
-    private String prenom;
-    private int tel;
-    private String adresse;
+    private Long id;
+    private int experience;
 
-    public Formateur(String nom, String prenom, int tel, String adresse) {
-        this.setNom(nom);
-        this.setPrenom(prenom);
-        this.setTel(tel);
-        this.setAdress(adresse);
+    public Formateur(Long id, int experience) {
+        this.setId(id);
+        this.setExperience(experience);
+
     }
 
-    public String getNom() {
-        return nom;
+    public int getExperience() {
+        return experience;
     }
 
-    public void setNom(String nom) {
-        this.nom = nom;
+    public void setExperience(int experience) {
+        this.experience = experience;
     }
 
-    public String getPrenom() {
-        return prenom;
+    public Long getId() {
+        return id;
     }
 
-    public void setPrenom(String prenom) {
-        this.prenom = prenom;
+    public void setId(Long id) {
+        this.id = id;
     }
-
-    public int getTel() {
-        return tel;
-    }
-
-    public void setTel(int tel) {
-        this.tel = tel;
-    }
-
-    public String getAdress() {
-        return adresse;
-    }
-
-    public void setAdress(String adresse) {
-        this.adresse = adresse;
-    }
-
 }
