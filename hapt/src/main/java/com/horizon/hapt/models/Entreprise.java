@@ -1,48 +1,48 @@
 package com.horizon.hapt.models;
 
 public class Entreprise {
-    private String raisonSociale;
-    private int matreculeFiscale;
-    private int tel;
-    private String registreCommercial;
+    private Long id;
+    private String raison;
+    private String matreculeFiscale;
+    private String rc;
 
-    public Entreprise(String raisonSociale, int matreculeFiscale, int tel, String registreCommercial) {
-        this.setRaisonSociale(raisonSociale);
+    public Entreprise(Long id, String raison, String matreculeFiscale, String rc) {
+        this.setId(id);
+        this.setRaisonSociale(raison);
         this.setMatreculeFiscale(matreculeFiscale);
-        this.setTel(tel);
-        this.setRegistreCommercial(registreCommercial);
+        this.setRegistreCommercial(rc);
     }
 
-    public String getRaisonSociale() {
-        return raisonSociale;
-    }
-
-    public void setRaisonSociale(String raisonSociale) {
-        this.raisonSociale = raisonSociale;
-    }
-
-    public int getMatreculeFiscale() {
+    public String getMatreculeFiscale() {
         return matreculeFiscale;
     }
 
-    public void setMatreculeFiscale(int matreculeFiscale) {
+    public void setMatreculeFiscale(String matreculeFiscale) {
         this.matreculeFiscale = matreculeFiscale;
     }
 
-    public int getTel() {
-        return tel;
+    public Long getId() {
+        return id;
     }
 
-    public void setTel(int tel) {
-        this.tel = tel;
+    public void setId(Long id) {
+        this.id = id;
     }
 
-    public String getRegistreCommercial() {
-        return registreCommercial;
+    public String getRaison() {
+        return raison;
     }
 
-    public void setRegistreCommercial(String registreCommercial) {
-        this.registreCommercial = registreCommercial;
+    public void setRaisonSociale(String raison) {
+        this.raison = raison;
+    }
+
+    public String getrc() {
+        return rc;
+    }
+
+    public void setRegistreCommercial(String rc) {
+        this.rc = rc;
     }
 
 }
