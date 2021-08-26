@@ -16,6 +16,7 @@ public class User {
     private Date dateN;
     private List<Role> listeRole;
     private List<Etudiant> listeEtudiant;
+    private List<Entreprise> listeEntreprise;
 
     public User(Long id, String mail, String password, String nom, String prenom, int cin, int tel, String niveau,
             Date dateN) {
@@ -23,6 +24,14 @@ public class User {
         this.setMail(mail);
         this.password = password;
 
+    }
+
+    public List<Entreprise> getListeEntreprise() {
+        return listeEntreprise;
+    }
+
+    public void setListeEntreprise(List<Entreprise> listeEntreprise) {
+        this.listeEntreprise = listeEntreprise;
     }
 
     public List<Etudiant> getListeEtudiant() {
