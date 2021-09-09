@@ -12,13 +12,13 @@ public class User {
     private String adresse;
     private int cin;
     private int tel;
-    private String niveau;
+    private int niveau;
     private Date dateN;
     private List<Role> listeRole;
     private List<Etudiant> listeEtudiant;
     private List<Entreprise> listeEntreprise;
 
-    public User(Long id, String mail, String password, String nom, String prenom, int cin, int tel, String niveau,
+    public User(Long id, String mail, String password, String nom, String prenom, int cin, int tel, int niveau,
             Date dateN) {
         this.setId(id);
         this.setMail(mail);
@@ -98,11 +98,11 @@ public class User {
         this.tel = tel;
     }
 
-    public String getNiveau() {
+    public int getNiveau() {
         return niveau;
     }
 
-    public void setNiveau(String niveau) {
+    public void setNiveau(int niveau) {
         this.niveau = niveau;
     }
 
